@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+***************************************************************************************************
+ Copyright (C) 2023 The Qt Company Ltd.
+ SPDX-License-Identifier: LicenseRef-Qt-Commercial OR LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only
+***************************************************************************************************
+-->
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{435DBDEA-93EA-4E34-9BC2-30133F94EE71}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">10.0.22621.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>6.5.3_msvc2019_64</QtInstall>
+    <QtModules>core;gui;qml;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies);$(Qt_LIBS_)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <QtRcc Include="SplendorDuel.qrc" />
+    <QtUic Include="SplendorDuel.ui" />
+    <QtMoc Include="SplendorDuel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="AI.h" />
+    <ClInclude Include="BackgroundWidgetUI.h" />
+    <ClInclude Include="Bag.h" />
+    <ClInclude Include="Board.h" />
+    <ClInclude Include="CardContainersGUI.h" />
+    <QtMoc Include="ConfirmationPushButtonUI.h" />
+    <QtMoc Include="InformationMessageUI.h" />
+    <QtMoc Include="FinPartie.h" />
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml.hpp" />
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml_iterators.hpp" />
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml_print.hpp" />
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml_utils.hpp" />
+    <QtMoc Include="MenuUI.h" />
+    <ClInclude Include="Message.h" />
+    <ClInclude Include="NobleHandler.h" />
+    <ClInclude Include="PrivilegeBoardUI.h" />
+    <QtMoc Include="PrivilegeUI.h" />
+    <ClInclude Include="XmlReader.h" />
+    <QtMoc Include="RemplirBoardUI.h" />
+    <QtMoc Include="CompleteBoardUI.h" />
+    <QtMoc Include="CardUI.h" />
+    <QtMoc Include="BoardCard.h" />
+    <ClInclude Include="GemmesContainerGUI.h" />
+    <ClInclude Include="Image.h" />
+    <QtMoc Include="PlayerGemsUI.h" />
+    <QtMoc Include="PlayersUI.h" />
+    <QtMoc Include="PersonnageBoardUI.h" />
+    <ClInclude Include="Player.h" />
+    <QtMoc Include="PlayerNameUI.h" />
+    <QtMoc Include="PlayerCardUI.h" />
+    <QtMoc Include="PlayerPoints.h" />
+    <ClInclude Include="Rules.h" />
+    <QtMoc Include="BoardUI.h" />
+    <ClInclude Include="Card.h" />
+    <ClInclude Include="DrawPile.h" />
+    <ClInclude Include="GameFactory.h" />
+    <ClInclude Include="GameHandler.h" />
+    <ClInclude Include="Gemmes.h" />
+    <QtMoc Include="GemmesUI.h" />
+    <ClInclude Include="MyException.h" />
+    <ClInclude Include="PrivilegeHandler.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AI.cpp" />
+    <ClCompile Include="BackgroundWidgetUI.cpp" />
+    <ClCompile Include="Bag.cpp" />
+    <ClCompile Include="Board.cpp" />
+    <ClCompile Include="BoardCard.cpp" />
+    <ClCompile Include="CardUI.cpp" />
+    <ClCompile Include="CompleteBoardUI.cpp" />
+    <ClCompile Include="ConfirmationPushButtonUI.cpp" />
+    <ClCompile Include="FinPartie.cpp" />
+    <ClCompile Include="InformationMessageUI.cpp" />
+    <ClCompile Include="MenuUI.cpp" />
+    <ClCompile Include="NobleHandler.cpp" />
+    <ClCompile Include="PersonnageBoardUI.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayerCardUI.cpp" />
+    <ClCompile Include="PlayerGemsUI.cpp" />
+    <ClCompile Include="PlayerNameUI.cpp" />
+    <ClCompile Include="PlayerPoints.cpp" />
+    <ClCompile Include="PlayersUI.cpp" />
+    <ClCompile Include="PrivilegeBoardUI.cpp" />
+    <ClCompile Include="PrivilegeUI.cpp" />
+    <ClCompile Include="RemplirBoardUI.cpp" />
+    <ClCompile Include="BoardUI.cpp" />
+    <ClCompile Include="Card.cpp" />
+    <ClCompile Include="DrawPile.cpp" />
+    <ClCompile Include="GameFactory.cpp" />
+    <ClCompile Include="GameHandler.cpp" />
+    <ClCompile Include="Gemmes.cpp" />
+    <ClCompile Include="GemmesUI.cpp" />
+    <ClCompile Include="Image.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PrivilegeHandler.cpp" />
+    <ClCompile Include="Rules.cpp" />
+    <ClCompile Include="SplendorDuel.cpp" />
+    <ClCompile Include="XmlReader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\0.png" />
+    <Image Include="res\1.png" />
+    <Image Include="res\2.png" />
+    <Image Include="res\3.png" />
+    <Image Include="res\actions.png" />
+    <Image Include="res\blanc.png" />
+    <Image Include="res\Blanc1.png" />
+    <Image Include="res\Blanc10.png" />
+    <Image Include="res\Blanc11.png" />
+    <Image Include="res\Blanc2.png" />
+    <Image Include="res\Blanc3.png" />
+    <Image Include="res\Blanc4.png" />
+    <Image Include="res\Blanc5.png" />
+    <Image Include="res\Blanc6.png" />
+    <Image Include="res\Blanc7.png" />
+    <Image Include="res\Blanc8.png" />
+    <Image Include="res\Blanc9.png" />
+    <Image Include="res\bleu.png" />
+    <Image Include="res\Bleu1.png" />
+    <Image Include="res\Bleu10.png" />
+    <Image Include="res\Bleu11.png" />
+    <Image Include="res\Bleu2.png" />
+    <Image Include="res\Bleu3.png" />
+    <Image Include="res\Bleu4.png" />
+    <Image Include="res\Bleu5.png" />
+    <Image Include="res\Bleu6.png" />
+    <Image Include="res\Bleu7.png" />
+    <Image Include="res\Bleu8.png" />
+    <Image Include="res\Bleu9.png" />
+    <Image Include="res\fond.png" />
+    <Image Include="res\Menu.png" />
+    <Image Include="res\Noble1.png" />
+    <Image Include="res\Noble2.png" />
+    <Image Include="res\Noble3.png" />
+    <Image Include="res\Noble4.png" />
+    <Image Include="res\NoColor1.png" />
+    <Image Include="res\NoColor10.png" />
+    <Image Include="res\NoColor11.png" />
+    <Image Include="res\NoColor12.png" />
+    <Image Include="res\NoColor2.png" />
+    <Image Include="res\NoColor3.png" />
+    <Image Include="res\NoColor4.png" />
+    <Image Include="res\NoColor5.png" />
+    <Image Include="res\NoColor6.png" />
+    <Image Include="res\NoColor7.png" />
+    <Image Include="res\NoColor8.png" />
+    <Image Include="res\NoColor9.png" />
+    <Image Include="res\noir.png" />
+    <Image Include="res\Noir1.png" />
+    <Image Include="res\Noir10.png" />
+    <Image Include="res\Noir11.png" />
+    <Image Include="res\Noir2.png" />
+    <Image Include="res\Noir3.png" />
+    <Image Include="res\Noir4.png" />
+    <Image Include="res\Noir5.png" />
+    <Image Include="res\Noir6.png" />
+    <Image Include="res\Noir7.png" />
+    <Image Include="res\Noir8.png" />
+    <Image Include="res\Noir9.png" />
+    <Image Include="res\or.png" />
+    <Image Include="res\perle.png" />
+    <Image Include="res\plateau.png" />
+    <Image Include="res\playerFond.png" />
+    <Image Include="res\playergemmes.png" />
+    <Image Include="res\points.png" />
+    <Image Include="res\privilege.png" />
+    <Image Include="res\remplir.png" />
+    <Image Include="res\rouge.png" />
+    <Image Include="res\Rouge1.png" />
+    <Image Include="res\Rouge10.png" />
+    <Image Include="res\Rouge11.png" />
+    <Image Include="res\Rouge2.png" />
+    <Image Include="res\Rouge3.png" />
+    <Image Include="res\Rouge4.png" />
+    <Image Include="res\Rouge5.png" />
+    <Image Include="res\Rouge6.png" />
+    <Image Include="res\Rouge7.png" />
+    <Image Include="res\Rouge8.png" />
+    <Image Include="res\Rouge9.png" />
+    <Image Include="res\vert.png" />
+    <Image Include="res\Vert1.png" />
+    <Image Include="res\Vert10.png" />
+    <Image Include="res\Vert11.png" />
+    <Image Include="res\Vert2.png" />
+    <Image Include="res\Vert3.png" />
+    <Image Include="res\Vert4.png" />
+    <Image Include="res\Vert5.png" />
+    <Image Include="res\Vert6.png" />
+    <Image Include="res\Vert7.png" />
+    <Image Include="res\Vert8.png" />
+    <Image Include="res\Vert9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SplendorDuel.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\message.xml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

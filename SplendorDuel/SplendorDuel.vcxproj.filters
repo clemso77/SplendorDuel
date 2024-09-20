@@ -1,0 +1,615 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>qml;cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Util">
+      <UniqueIdentifier>{190d9816-b877-48a5-840e-933f47dd709e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exception">
+      <UniqueIdentifier>{4e95cdac-6f4a-4b15-8723-04ed000b5425}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Util">
+      <UniqueIdentifier>{bed57bfc-29fd-40e5-ae60-2ea994801e03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\img">
+      <UniqueIdentifier>{93505e64-0e3d-45e0-9d2d-6c5c2c8a645a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{876bd585-795f-4b1f-9cfe-cda5fca5c4c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{242c5c80-c8bc-43f1-adb5-972cd7b5af29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Board">
+      <UniqueIdentifier>{030b5c4d-0d0d-4234-8984-d840dd2d9820}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Board">
+      <UniqueIdentifier>{a648864c-ff2b-4794-9f39-5e2e8599283a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Player">
+      <UniqueIdentifier>{6cc92698-6cbe-469f-a312-d6cfccbc2f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Player">
+      <UniqueIdentifier>{cd3a9aaf-de04-419d-b5d5-63960ed972ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\img\Card">
+      <UniqueIdentifier>{b8768f63-269e-4dcc-b47f-69bf68989ccf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs">
+      <UniqueIdentifier>{b41f4f7c-35b2-4cd7-879d-9f985bdffe86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libs\rapidxml-1.13">
+      <UniqueIdentifier>{e1a613e3-f99d-4f8a-9b7b-a54002df6d4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameLogic">
+      <UniqueIdentifier>{d1eda6e8-9652-41f8-82c5-76b93ca5d96c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameLogic">
+      <UniqueIdentifier>{26470e97-c0c4-4336-aba7-9c8e052b774e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Menu">
+      <UniqueIdentifier>{df627f29-faf8-49fa-a359-28ca3b020ed8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Menu">
+      <UniqueIdentifier>{c4639eb5-84dd-43f6-932d-acc33beca632}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="SplendorDuel.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtUic Include="SplendorDuel.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="MyException.h">
+      <Filter>Header Files\Exception</Filter>
+    </ClInclude>
+    <ClInclude Include="Image.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Rules.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="GemmesContainerGUI.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlReader.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml_utils.hpp">
+      <Filter>Source Files\libs\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml.hpp">
+      <Filter>Source Files\libs\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml_iterators.hpp">
+      <Filter>Source Files\libs\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="libs\rapidxml-1.13\rapidxml_print.hpp">
+      <Filter>Source Files\libs\rapidxml-1.13</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivilegeBoardUI.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="BackgroundWidgetUI.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Action.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Bag.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Card.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawPile.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameFactory.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="GameHandler.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Gemmes.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="NobleHandler.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="PrivilegeHandler.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\GameLogic</Filter>
+    </ClInclude>
+    <ClInclude Include="Message.h">
+      <Filter>Header Files\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="CardContainersGUI.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="AI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GemmesUI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Image.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Rules.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="SplendorDuel.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardUI.cpp">
+      <Filter>Source Files\UI\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="CompleteBoardUI.cpp">
+      <Filter>Source Files\UI\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="RemplirBoardUI.cpp">
+      <Filter>Source Files\UI\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerGemsUI.cpp">
+      <Filter>Source Files\UI\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="BoardCard.cpp">
+      <Filter>Source Files\UI\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerCardUI.cpp">
+      <Filter>Source Files\UI\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerNameUI.cpp">
+      <Filter>Source Files\UI\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayersUI.cpp">
+      <Filter>Source Files\UI\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="CardUI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerPoints.cpp">
+      <Filter>Source Files\UI\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="PersonnageBoardUI.cpp">
+      <Filter>Source Files\UI\Board</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlReader.cpp">
+      <Filter>Source Files\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivilegeBoardUI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="BackgroundWidgetUI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivilegeUI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Bag.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Card.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="DrawPile.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameFactory.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="GameHandler.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Gemmes.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="NobleHandler.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="PrivilegeHandler.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="InformationMessageUI.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\GameLogic</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuUI.cpp">
+      <Filter>Source Files\UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfirmationPushButtonUI.cpp">
+      <Filter>Source Files\UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="FinPartie.cpp">
+      <Filter>Source Files\UI\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="AI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\remplir.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\rouge.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\vert.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\actions.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\blanc.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\bleu.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\fond.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\noir.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\or.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\perle.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\plateau.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\playerFond.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\playergemmes.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\0.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc5.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc6.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc7.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc8.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc9.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc10.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc11.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Blanc2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\points.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\Vert1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert5.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert6.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert7.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert8.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert9.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert10.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Vert11.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge5.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge6.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge7.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge8.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge9.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge10.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Rouge11.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu5.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu6.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu7.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu8.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu9.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu10.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Bleu11.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir5.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir6.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir7.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir8.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir9.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir10.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noir11.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor5.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor6.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor7.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor8.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor9.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor10.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor11.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\NoColor12.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noble1.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noble2.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noble3.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\Noble4.png">
+      <Filter>Resource Files\img\Card</Filter>
+    </Image>
+    <Image Include="res\privilege.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+    <Image Include="res\Menu.png">
+      <Filter>Resource Files\img</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="SplendorDuel.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="GemmesUI.h">
+      <Filter>Header Files\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="SplendorDuel.h">
+      <Filter>Header Files\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="CompleteBoardUI.h">
+      <Filter>Header Files\UI\Board</Filter>
+    </QtMoc>
+    <QtMoc Include="RemplirBoardUI.h">
+      <Filter>Header Files\UI\Board</Filter>
+    </QtMoc>
+    <QtMoc Include="BoardUI.h">
+      <Filter>Header Files\UI\Board</Filter>
+    </QtMoc>
+    <QtMoc Include="PlayerGemsUI.h">
+      <Filter>Header Files\UI\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="PlayersUI.h">
+      <Filter>Header Files\UI\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="PlayerNameUI.h">
+      <Filter>Header Files\UI\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="PlayerCardUI.h">
+      <Filter>Header Files\UI\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="BoardCard.h">
+      <Filter>Header Files\UI\Board</Filter>
+    </QtMoc>
+    <QtMoc Include="PlayerPoints.h">
+      <Filter>Header Files\UI\Player</Filter>
+    </QtMoc>
+    <QtMoc Include="PersonnageBoardUI.h">
+      <Filter>Header Files\UI\Board</Filter>
+    </QtMoc>
+    <QtMoc Include="CardUI.h">
+      <Filter>Header Files\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="PrivilegeUI.h">
+      <Filter>Header Files\UI</Filter>
+    </QtMoc>
+    <QtMoc Include="MenuUI.h">
+      <Filter>Header Files\UI\Menu</Filter>
+    </QtMoc>
+    <QtMoc Include="ConfirmationPushButtonUI.h">
+      <Filter>Header Files\UI\Menu</Filter>
+    </QtMoc>
+    <QtMoc Include="InformationMessageUI.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="FinPartie.h">
+      <Filter>Header Files\UI\Menu</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="res\message.xml">
+      <Filter>Resource Files</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

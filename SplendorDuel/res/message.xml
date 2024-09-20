@@ -1,0 +1,65 @@
+<!-- language: {fr} -->
+<data>
+	<lang>fr</lang>
+	<lang>eng</lang>
+	<fr>
+		<SUPP_GEMS>
+			<message>Supprimer une Gemme</message>
+			<color>#ff0000</color>
+		</SUPP_GEMS>
+		<USE_PRIVILEGE>
+			<message>Prennez une Gemme</message>
+			<color>#ffffff</color>
+		</USE_PRIVILEGE>
+		<REPLAY>
+			<message>Vous rejouez</message>
+			<color>#00ff00</color>
+		</REPLAY>
+		<PICK_GEMMES>
+			<message>Piochez votre Gemme</message>
+			<color>#00ff00</color>
+		</PICK_GEMMES>
+		<STEAL_GEMMES>
+			<message>Volez une gemme</message>
+			<color>#00ff00</color>
+		</STEAL_GEMMES>
+		<ASSIGN_CARD>
+			<message>Assignez la carte</message>
+			<color>#ffffff</color>
+		</ASSIGN_CARD>
+		<RESERV_CARD>
+			<message>Prenez 1 d'Or sur le plateau</message>
+			<color>#00ff00</color>
+		</RESERV_CARD>
+	</fr>
+	<eng>
+		<SUPP_GEMS>
+			<message>You have to many gems ! Please dispose of them before continuing</message>
+			<color>#ff0000</color>
+		</SUPP_GEMS>
+		<USE_PRIVILEGE>
+			<message>Using privilege : pick any gem on the board (except Gold) !</message>
+			<color>#ffffff</color>
+		</USE_PRIVILEGE>
+		<REPLAY>
+			<message>You can play again after this turn</message>
+			<color>#00ff00</color>
+		</REPLAY>
+		<PICK_GEMMES>
+			<message>Pick a gem on the board with the same color than the card you just bought</message>
+			<color>#00ff00</color>
+		</PICK_GEMMES>
+		<STEAL_GEMMES>
+			<message>Steal any gem from your adversary's stock (except Gold)</message>
+			<color>#00ff00</color>
+		</STEAL_GEMMES>
+		<ASSIGN_CARD>
+			<message>Assign th card you just bought to the color of your choice</message>
+			<color>#ffffff</color>
+		</ASSIGN_CARD>
+		<RESERV_CARD>
+			<message>Take 1 Gold from the board</message>
+			<color>#00ff00</color>
+		</RESERV_CARD>
+	</eng>
+</data>
