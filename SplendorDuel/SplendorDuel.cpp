@@ -37,6 +37,7 @@ SplendorDuel::SplendorDuel(Bag* bag, Board* b, DrawPile** drawPiles, Player* p1,
     privilege = new PrivilegeBoardUI(com);
 
     this->board = new CompleteBoardUI(com, *b);
+    
     QHBoxLayout* hbox = new QHBoxLayout();
     com->setLayout(hbox);
     hbox->setSpacing(0);
@@ -50,20 +51,20 @@ SplendorDuel::SplendorDuel(Bag* bag, Board* b, DrawPile** drawPiles, Player* p1,
     message = new InformationMessageUI(leftBoard);
     vbox->addWidget(message);
     personnage = new PersonnageBoardUI(leftBoard);
-    vbox->addWidget(personnage);
-    vbox->setStretch(0, 3);
-    vbox->setStretch(1, 7);
+    vbox->addWidget(personnage, 5);
+    vbox->setStretch(0, 2);
+    vbox->setStretch(1, 8);
 
     hbox->addWidget(leftBoard);
     hbox->addWidget(privilege, 0);
     hbox->addWidget(board);
     cards = new BoardCardUI(com);
     hbox->addWidget(cards);
-    hbox->setStretch(0, 1);
+    hbox->setStretch(0, 2);
 
-    hbox->setStretch(2, 4);
+    hbox->setStretch(2, 3);
     hbox->setStretch(3, 5);
-
+    
     vl->addWidget(ptab[0],0, 0);
     vl->addWidget(com, 1, 0);
     vl->addWidget(ptab[1], 2, 0);

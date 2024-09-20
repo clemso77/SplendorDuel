@@ -4,27 +4,27 @@
 	<lang>eng</lang>
 	<fr>
 		<SUPP_GEMS>
-			<message>Supprimer une Gemme</message>
+			<message>Vous avez trop de gemmes, supprimez en une</message>
 			<color>#ff0000</color>
 		</SUPP_GEMS>
 		<USE_PRIVILEGE>
-			<message>Prennez une Gemme</message>
+			<message>Utilisation d'un privilège: prenez une gemme</message>
 			<color>#ffffff</color>
 		</USE_PRIVILEGE>
 		<REPLAY>
-			<message>Vous rejouez</message>
+			<message>Vous pourrez rejouer après ce tour</message>
 			<color>#00ff00</color>
 		</REPLAY>
 		<PICK_GEMMES>
-			<message>Piochez votre Gemme</message>
+			<message>Piochez une gemme de la couleur acheté</message>
 			<color>#00ff00</color>
 		</PICK_GEMMES>
 		<STEAL_GEMMES>
-			<message>Volez une gemme</message>
+			<message>Volez une gemme à votre adversaire (sauf Or)</message>
 			<color>#00ff00</color>
 		</STEAL_GEMMES>
 		<ASSIGN_CARD>
-			<message>Assignez la carte</message>
+			<message>Assignez la carte achetée à une couleur</message>
 			<color>#ffffff</color>
 		</ASSIGN_CARD>
 		<RESERV_CARD>

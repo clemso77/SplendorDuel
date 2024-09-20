@@ -4,28 +4,33 @@
 #include "NobleHandler.h"
 #include "SplendorDuel.h"
 
-PersonnageBoardUI::PersonnageBoardUI(QWidget* parent): CardContainerGUI(parent) {
-	cards = new CardUI*[4]();
-	// TODO CHANGER
-	vector<Card*> nobles = SingletonNobleHandler::getInstance()->getNobleCards();
-	int i = 0;
-	for (Card* c: nobles) {
-		cards[i] = new CardUI(this, 0, i);
-		cards[i]->ajouterCarte(c);
-		i++;
-	}
-	setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
-	QGridLayout* grid = new QGridLayout();
-	grid->setSpacing(0);
-	grid->getContentsMargins(0, 0, 0, 0);
-	this->setLayout(grid);
-	int ligne = 0;
-	for (int i = 0; i < 4; i++) {
-		if (i == 2)
-			ligne++;
-		grid->addWidget(cards[i], i%2, ligne);
-	}
+PersonnageBoardUI::PersonnageBoardUI(QWidget* parent) : CardContainerGUI(parent) {
+    cards = new CardUI * [4]();
+    setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+    setMinimumSize(QSize(20 * 2, 30 * 2));
+    QGridLayout* grid = new QGridLayout();
+    grid->setSpacing(0);
+    grid->setContentsMargins(0, 0, 0, 0);
+    setContentsMargins(0, 0, 0, 0);
+    this->setLayout(grid);
+
+    // Récupérer les cartes nobles
+    vector<Card*> nobles = SingletonNobleHandler::getInstance()->getNobleCards();
+    int i = 0;
+    for (Card* c : nobles) {
+        cards[i] = new CardUI(this, 0, i);
+        cards[i]->ajouterCarte(c);
+        i++;
+    }
+
+    int ligne = 0;
+    for (int i = 0; i < 4; i++) {
+        if (i == 2)
+            ligne++;
+        grid->addWidget(cards[i], ligne, i%2);
+    }
 }
+
 
 PersonnageBoardUI::~PersonnageBoardUI() {
 	delete[] cards;
