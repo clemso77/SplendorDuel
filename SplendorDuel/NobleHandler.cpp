@@ -46,11 +46,9 @@ bool SingletonNobleHandler::playerCanBuyNoble(const Card& noble, const Player& p
 
 bool SingletonNobleHandler::givePlayerNoble(const Card& noble, const Player& player) {
 	if (!this->playerCanBuyNoble(noble, player)) return false;
-
+	
 	EnumNoblePosition newPosition = this->getNoblePositionFromPlayer(player);
 	noblePosition[this->getNobleIdxFromCard(noble)] = newPosition;
-
-	cout << noblePosition[this->getNobleIdxFromCard(noble)];
 
 	return true;
 }

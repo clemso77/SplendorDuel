@@ -87,7 +87,7 @@ vector<Card*> XmlReader::getNoblesFromXml() {
 			}
 		}
 
-		Card* card = new Card(0, prestige, static_cast<EnumGemmes>(0), 0, 0, imageSrc, effect);
+		Card* card = new Card(0, prestige, static_cast<EnumGemmes>(7), 0, 0, imageSrc, effect);
 		cards.push_back(card);
 	}
 	return cards;
