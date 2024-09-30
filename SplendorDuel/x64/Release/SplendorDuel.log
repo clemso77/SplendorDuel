@@ -1,2 +1,0 @@
-﻿C:\Users\Clément Martins\AppData\Local\QtMsBuild\qt_vars.targets(68,5): error : There's no Qt version assigned to project SplendorDuel.vcxproj for configuration Release/x64.
-C:\Users\Clément Martins\AppData\Local\QtMsBuild\qt_vars.targets(68,5): error : Please set a Qt installation in 'Project|Properties|Configuration Properties|Qt Project Settings|Qt Installation'.
